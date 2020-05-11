@@ -15,7 +15,9 @@ in `pkg/agent`.
 ## Running/Execution
 In order to run the actual program, you can either execute the pre-built binary in `/bin`,
 or build the program with:
-`make build`
+```
+make build
+```
 
 You Can run the program with:
 ```shell script
