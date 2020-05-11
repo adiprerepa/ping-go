@@ -1,9 +1,8 @@
 # golang-ping
 This a ping program written using golang (1.13). The project uses no external libraries besides the icmp
-golang library, which should be installed with:
-```shell script
-go get -u golang.org/x/net
-``` 
+golang library, which is: `golang.org/x/net`.
+
+
 This library is necessary for making raw ICMP calls.
 ## Project Structure
 
@@ -16,12 +15,11 @@ in `pkg/agent`.
 ## Running/Execution
 In order to run the actual program, you can either execute the pre-built binary in `/bin`,
 or build the program with:
+`make build`
+
+You Can run the program with:
 ```shell script
-go build -o ping ping.go
-```
-This should be done in the `src` directory. You can then run the program with:
-```shell script
-sudo ./ping
+sudo ./bin/ping
 ```
 Then, a list of flags and usage will be given to you. Note: The program needs to be run in `sudo`
 mode because golang needs to send ICMP packets.
